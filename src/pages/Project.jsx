@@ -10,8 +10,6 @@ const Project = () => {
         <div className=" 2xl:w-full 2xl:h-full xl:w-full xl:h-full max-sm:h-full flex justify-center items-center gap-32 max-sm:gap-4 max-sm:flex-wrap 2xl:mb-5 max-sm:overflow-y-auto max-sm:overflow-hidden 2xl:py-2">
           <ProjectModal title='Project Listing' description='This is a simple CRUD site projects on KodeGo' image={projectListingImage} link='https://listingproject.onrender.com/listings' linkTitle='https://listingproject.onrender.com' danger={false}/>
           <ProjectModal title='GSOInventorySys' description='This is our capstone project in KodeGo' image={gsoInvSystemImage} link='https://gsoinvsystemnodejs.onrender.com' linkTitle='https://listingproject.onrender.com' danger={true}/>
-    
-
         </div>
       </div>
     </section>

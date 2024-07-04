@@ -1,7 +1,18 @@
 // import myHeroImage from '../assets/avatar.avif'
 import { getImageUrl } from '../utils'
 
+
 const Hero = () => {
+
+  const downloadFileAtURL = (url) => {
+    const aTag = document.createElement('a')
+    aTag.href = url
+    aTag.setAttribute('download',url);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  }
+
   return (
     <section className="text-white w-full h-screen flex items-center max-sm:flex-col max-sm:pt-32 max-sm:px-2 pt-20" id="home">
       <div className="w-full 2xl:ps-28 md:ps-14 max-sm:p-0 max-sm:order-last max-sm:py-4 max-sm:text-center"> 
@@ -18,7 +29,7 @@ const Hero = () => {
           <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="40px" height="40px" className="rounded-full p-1 hover:bg-lime-300 border-2 border-lime-300 hover:stroke-black hover:bg-lime-300 ease-in duration-300 fill-lime-300 hover:fill-black ">
             <path d="M 23.773438 12 C 12.855437 12 12 12.854437 12 23.773438 L 12 40.226562 C 12 51.144563 12.855438 52 23.773438 52 L 40.226562 52 C 51.144563 52 52 51.145563 52 40.226562 L 52 23.773438 C 52 12.854437 51.145563 12 40.226562 12 L 23.773438 12 z M 21.167969 16 L 42.832031 16 C 47.625031 16 48 16.374969 48 21.167969 L 48 42.832031 C 48 47.625031 47.624031 48 42.832031 48 L 21.167969 48 C 16.374969 48 16 47.624031 16 42.832031 L 16 21.167969 C 16 16.374969 16.374969 16 21.167969 16 z M 22.501953 18.503906 C 20.872953 18.503906 19.552734 19.824172 19.552734 21.451172 C 19.552734 23.078172 20.871953 24.400391 22.501953 24.400391 C 24.126953 24.400391 25.447266 23.079172 25.447266 21.451172 C 25.447266 19.826172 24.126953 18.503906 22.501953 18.503906 z M 37.933594 26.322266 C 35.473594 26.322266 33.823437 27.672172 33.148438 28.951172 L 33.078125 28.951172 L 33.078125 26.728516 L 28.228516 26.728516 L 28.228516 43 L 33.28125 43 L 33.28125 34.949219 C 33.28125 32.826219 33.687359 30.771484 36.318359 30.771484 C 38.912359 30.771484 38.945312 33.200891 38.945312 35.087891 L 38.945312 43 L 44 43 L 44 34.074219 C 44 29.692219 43.054594 26.322266 37.933594 26.322266 z M 19.972656 26.728516 L 19.972656 43 L 25.029297 43 L 25.029297 26.728516 L 19.972656 26.728516 z"/></svg>
         </a>
-        <a href="" className="border-2 border-lime-300 flex items-center py-2 px-4 rounded-full text-lime-300 hover:bg-lime-300 hover:text-black transition ease-in duration-300 font-bold">DOWNLOAD CV</a>
+        <button className="border-2 border-lime-300 flex items-center py-2 px-4 rounded-full text-lime-300 hover:bg-lime-300 hover:text-black transition ease-in duration-300 font-bold" onClick={()=> {downloadFileAtURL(getImageUrl('CV.pdf'))}}>DOWNLOAD CV</button>
        
         </div>
       

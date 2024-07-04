@@ -1,5 +1,5 @@
-import myHeroImage from '../assets/avatar.avif'
-
+// import myHeroImage from '../assets/avatar.avif'
+import { getImageUrl } from '../utils'
 
 const Hero = () => {
   return (
@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
       <div className="w-full flex justify-center relative ">
         <div className="absolute rounded-full 2xl:w-96 2xl:h-96 lg:w-96 lg:h-96 max-sm:h-72 max-sm:w-72 md:h-72 md:w-72 shadow-[0px_0px_35px_2px_rgba(0,0,0,0.2)] shadow-lime-500 max-sm:max-w-72 animate-pulse"></div>
-        <img src={myHeroImage} alt="hero image of me" className=" 2xl:w-96 2xl:h-96 lg:h-96 lg:w-96 rounded-full max-sm:max-w-72 max-sm:max-h-72 md:h-72 md:w-72"/>
+        <img src={getImageUrl("avatar.avif")} alt="hero image of me" className=" 2xl:w-96 2xl:h-96 lg:h-96 lg:w-96 rounded-full max-sm:max-w-72 max-sm:max-h-72 md:h-72 md:w-72"/>
       </div>
     </section>
   )

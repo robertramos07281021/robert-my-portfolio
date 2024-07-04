@@ -10,7 +10,7 @@ const Skill = () => {
         <SkillsModal label='CSS' text="I can use flexbox and grid in layouting the pages, Utilize pseudo-classes and pseudo elements, create a animations and etc. I can use frameworks Bootstrap and Tailwind."/>
         <SkillsModal label='JS' text="Basic knowledge in functions, arrow functions, IIFE. Arrays and array methods. Objects, object properties, object methods, object constructor. I have basic knowledge in DOM manipulation."/>
         <SkillsModal label='MongoDB' text="I can create database using MongoDB, I can manipulate the data, how to populate, how to create a relationship between database models. "/>
-        <SkillsModal label='Express' text="I can create middlewares, error handlers routing and http methods, i can easyly connect my app to databases how to have a good RESTFULL API."/>
+        <SkillsModal label='Express' text="I can create middlewares, error handlers routing and http methods, i can easyly connect my app to databases, how to have a good RESTFULL API."/>
         <SkillsModal label='NodeJS' text="I can efficiently handles thousands of current connection to avoids the complexities of managing thread concurrency that can bring a bug, I can have a full stack website on this server, just add express and mongodb techstack."/>
         <SkillsModal label='ReactJS' text="I can prepare a good file arrangement, I can use hooks, create a components, I can use props, proptypes, default props value."/>
         <SkillsModal label='Comm' text="I can communicate to other software engineers, and team to other, can borrow any kind of suggestions."/>

@@ -27,16 +27,16 @@ const Header = () => {
       <img src={toggleMenu ? `${getImageUrl('closebutton.png')}` : `${getImageUrl('menubutton.png')}`} alt="menubutton" className="w-10 h-10 block md:hidden lg:hidden xl:hidden 2xl:hidden" onClick={showMenu}/>
       <ul id="navMenu" className=" sm:gap-2 md:gap-8 lg:gap-12 lx:gap-20 2xl:gap-24 text-2xl hidden md:flex lg:flex xl:flex 2xl:flex md:flex-row lg:flex-row xl:flex-row 2xl:flex-row flex-col max-sm:absolute max-sm:top-20 max-sm:right-0 max-sm:w-32 max-sm:items-center bg-black font-semibold max-sm:shadow-lg max-sm:shadow-lime-500 max-sm:backdrop-blur-lg">
         <li>
-          <a href="#home"><p className="hover:scale-125">Home</p></a>
+          <a href="#home" accessKey="h"><p className="hover:scale-125">Home</p></a>
         </li>
         <li>
-          <a href="#about"><p className="hover:scale-125">About Me</p></a>
+          <a href="#about" accessKey="a"><p className="hover:scale-125">About Me</p></a>
         </li>
         <li>
-          <a href="#projects"><p className="hover:scale-125">Projects</p></a>
+          <a href="#projects" accessKey="p"><p className="hover:scale-125">Projects</p></a>
         </li>
         <li>
-          <a href="#contact"><p className="hover:scale-125">Contact</p></a> 
+          <a href="#contact" accessKey="c"><p className="hover:scale-125">Contact</p></a> 
         </li>
       </ul>
     </nav>

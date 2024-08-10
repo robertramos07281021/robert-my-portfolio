@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="w-full 2xl:ps-28 md:ps-14 max-sm:p-0 max-sm:order-last max-sm:py-4 max-sm:text-center"> 
         <h1><span className="text-lime-200 max-sm:text-xs">console</span><span>.log</span><span className="text-rose-400">&#40;</span><span className="text-orange-400">&#34;Hello World!&#34;</span><span className="text-rose-400">&#41;</span></h1>
         <h1 className="text-6xl font-bold max-sm:text-5xl">Hi, I&#39;m <span className="text-lime-400">Robert</span></h1>
-        <p className="mb-5 text-lg max-sm:text-base">I`m a Full-Stack Web Developer with 1 year of experience using MongoDB, Express, React, And NodeJS.</p>
+        <p className="mb-5 text-lg max-sm:text-base">I`m a Full-Stack Web Developer using MongoDB, Express, ReactJS, VueJS And NodeJS.</p>
         <div className="flex gap-5 flex max-sm:justify-center">
         <a href="https://github.com/robertramos07281021" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 26 26" width="40px" height="40px" className="rounded-full p-1 hover:bg-lime-300 border-2 border-lime-300 hover:stroke-black hover:bg-lime-300 ease-in duration-300 fill-lime-300 hover:fill-black">

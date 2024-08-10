@@ -30,7 +30,6 @@ ProjectModal.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   link: PropTypes.string,
-  linkTitle: PropTypes.string,
   danger: PropTypes.bool,
   image: PropTypes.string
 }

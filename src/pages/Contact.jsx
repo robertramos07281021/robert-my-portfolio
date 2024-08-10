@@ -1,5 +1,5 @@
 import { FaFacebook, FaLinkedin  } from "react-icons/fa";
-import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from "react-icons/fa6";
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaVuejs  } from "react-icons/fa6";
 import { SiMongodb, SiExpress, SiTailwindcss  } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { DiNodejs } from "react-icons/di";
@@ -72,6 +72,7 @@ const Contact = () => {
           <p className="text-lime-300 2xl:text-6xl xl:text-6xl"><DiNodejs/></p>
           <p className="text-lime-300 2xl:text-3xl xl:text-3xl"><SiTailwindcss/></p>
           <p className="text-lime-300 2xl:text-3xl xl:text-3xl"><FaBootstrap/></p>
+          <p className="text-lime-300 2xl:text-3xl xl:text-3xl"><FaVuejs /></p>
       </footer> 
       </section>
 

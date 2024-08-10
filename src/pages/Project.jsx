@@ -11,6 +11,7 @@ const Project = () => {
           <ProjectModal title='GSOInventorySys' description='This is our capstone project in KodeGo' image={getImageUrl('gsoInventorySys.PNG')} link='https://gsoinvsystemnodejs.onrender.com' danger={true}/>
           <ProjectModal title='Post_site' description='For study on how to make MERN stack and deploy.' image={getImageUrl('post_site.PNG')} link='https://mern-2024-d7w4.onrender.com' danger={false}/>
           <ProjectModal title='Food Nouveau' description='This is our MP2 on KodeGo using MEVN stack' image={getImageUrl('food_nouveau.PNG')} link='https://food-nouveau-mevn.onrender.com/' danger={false}/>
+          <ProjectModal title='MEVN_Todo' description='For study on how to make MEVN stack and deploy.' image={getImageUrl('MEVN_Stack.PNG')} link='https://todolist-mevn.onrender.com/' danger={false}/>
         </div>
       </div>
     </section>

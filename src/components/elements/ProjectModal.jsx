@@ -12,7 +12,7 @@ const ProjectModal = (props) => {
         <div className="border-b border-x border-slate-500 p-3 text-black 2xl:text-xl max-sm:text-sm bg-lime-400 font-black flex items-center justify-between ">
           <p>{props.title}</p>
           {props.danger && <span className="text-red-500 peer"><CgDanger/></span>}
-          {props.danger && <p className="peer-hover:block hidden absolute text-red-500 border-4 border-red-500 2xl:w-[350px] text-center rounded p-2 2xl:-right-[55px] 2xl:-bottom-[180px] max-sm:right-[30px] bg-white border xl:-bottom-[160px] xl:-right-[55px] xl:w-[350px] lg:w-[350px] lg:-bottom-[160px] lg:-right-[55px] text-xs md:w-[350px] md:-bottom-[160px] md:-right-[55px] ">This is not responsive site, for laptop and desktop only.</p>}
+          {props.danger && <p className="peer-hover:block hidden absolute text-red-500 border-4 border-red-500 2xl:w-[350px] text-center rounded p-2 2xl:-right-[55px] 2xl:-bottom-[180px] max-sm:right-[30px] bg-white xl:-bottom-[160px] xl:-right-[55px] xl:w-[350px] lg:w-[350px] lg:-bottom-[160px] lg:-right-[55px] text-xs md:w-[350px] md:-bottom-[160px] md:-right-[55px] ">This is not responsive site, for laptop and desktop only.</p>}
         </div>
         </div>
         <p className="border-b border-x border-slate-500 max-sm:h-16 flex items-center p-3 text-black text-sm max-sm:text-xs bg-lime-400 font-black">{props.description}</p>

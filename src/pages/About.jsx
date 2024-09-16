@@ -95,12 +95,12 @@ const About = () => {
   
   return (
     <>  
-      {window.innerWidth > 425 && 
-      <section className="w-full h-screen flex items-center max-sm:flex-col pt-20 text-white 2xl:px-36 md:px-5 md:gap-5" id="about">
+    
+      <section className="w-full h-screen xs:hidden items-center md:flex pt-20 text-white 2xl:px-36 md:px-5 md:gap-5" id="about">
         <div className="flex flex-col items-center gap-5 2xl:w-2/3 xl:w-2/3 ">
           <div className="flex flex-col gap-3">
             <h1 className="text-4xl font-bold">About <span className="text-lime-500">Me</span></h1>
-            <p className="2xl:w-96 xl:w-96 text-justify indent-10 md:text-sm md:w-80">An inventive Web Developer in order to create a websites and is skilled in all advanced web development. Capable of using tech-stack including HTML/CSS, JavaScript, MongoDB, Express, Node js, React js. Functionally effective in self-manage during independent projects, as well as collaborating with other teams, and also can adopt other tech-stack.</p>
+            <p className="2xl:w-96 xl:w-96 text-justify indent-10 md:text-sm md:w-80">An inventive Web Developer in order to create a websites and is skilled in all advanced web development. Capable of using tech-stack including HTML/CSS, JavaScript, MongoDB, MySQL, Express, Node JS, React JS, Vue JS, . Functionally effective in self-manage during independent projects, as well as collaborating with other teams, and also can adopt other tech-stack.</p>
           </div>
           <div className="flex flex-col justify-end gap-4 2xl:w-96 xl:w-96 md:w-80">
             <Button label="Skills" onclick={skill} height={'10'} width={''} isOpen={isSkill}/>
@@ -115,12 +115,12 @@ const About = () => {
           {contentPicker == 'educ' ?  <Education /> : ""}
           {contentPicker == 'exp' ?  <Experience /> : ""}
         </div>
-      </section>}
-      {window.innerWidth <= 425 && 
-      <section className="w-full h-screen flex items-center max-sm:flex-col pt-20 text-white px-0 relative " id="about">
+      </section>
+
+      <section className="w-full h-screen xs:flex md:hidden items-center max-sm:flex-col pt-20 text-white px-0 relative " id="aboutm">
         {isToggleAbout && <div className="flex flex-col gap-3 max-sm:p-10">
           <h1 className="text-4xl font-bold">About <span className="text-lime-500">Me</span></h1>
-          <p className=" text-justify indent-10">An inventive Web Developer in order to create a websites and is skilled in all advanced web development. Capable of using tech-stack including HTML/CSS, JavaScript, MongoDB, Express, Node js, React js. Functionally effective in self-manage during independent projects, as well as collaborating with other teams, and also can adopt other tech-stack.</p>
+          <p className=" text-justify indent-10">An inventive Web Developer in order to create a websites and is skilled in all advanced web development. Capable of using tech-stack including HTML/CSS, JavaScript, MongoDB, MySQL, Express, Node JS, React JS, Vue JS, . Functionally effective in self-manage during independent projects, as well as collaborating with other teams, and also can adopt other tech-stack.</p>
         </div> }
         {isToggleSkill && <Skill/>}
         {isToggleCert && <Certificate/>}
@@ -136,7 +136,7 @@ const About = () => {
         </div>
       </section>
 
-      }
+      
     </>
 
   )

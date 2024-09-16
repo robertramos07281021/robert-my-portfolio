@@ -5,9 +5,8 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { DiNodejs } from "react-icons/di";
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+
 const Contact = () => {
-
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -31,8 +30,6 @@ const Contact = () => {
         },
       );
     }
-   
-  
   };
   return (
 

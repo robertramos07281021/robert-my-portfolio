@@ -60,7 +60,7 @@ const Header = () => {
     <>
 
     <nav className=" h-20 xs:hidden lg:flex justify-between items-center px-10 bg-black hover:shadow-lg hover:shadow-lime-500 fixed w-screen z-50 duration-500 transition ease-in-out"> 
-      <a href='/' className=" lg:text-3xl xl:text-4xl font-bold text-white hover:text-lime-400"><p className="hover:scale-110 duration-500 ease-in-out "><span className="text-lime-400">My</span> Portfolio</p></a>
+      <a href='/robert-my-portfolio/' className=" lg:text-3xl xl:text-4xl font-bold text-white hover:text-lime-400"><p className="hover:scale-110 duration-500 ease-in-out "><span className="text-lime-400">My</span> Portfolio</p></a>
       <ul id="navMenu" className=" flex text-white text-2xl lg:gap-20 2xl:gap-24">
         <li className="w-auto">
           <a href="#home" accessKey="h"><p className={`hover:scale-110 ease-in-out duration-500 transition  hover:text-lime-400 ${scrollLocation < 739 ? 'text-lime-400' : "" }`} onMouseEnter={handleMouseHoverHome} onMouseLeave={handleMouseHoverLeaveHome}>Home</p></a>
@@ -81,7 +81,7 @@ const Header = () => {
       </ul>
     </nav>
     <nav className="xs:flex lg:hidden w-full h-10 py-8 px-3 fixed  items-center justify-between z-50 bg-black">
-      <a href='/' className=" font-bold text-3xl text-white hover:text-lime-400"><p className="hover:scale-105 duration-500 ease-in-out "><span className="text-lime-400 ps-4">My</span> Portfolio</p></a>
+      <a href='/robert-my-portfolio/' className=" font-bold text-3xl text-white hover:text-lime-400"><p className="hover:scale-105 duration-500 ease-in-out "><span className="text-lime-400 ps-4">My</span> Portfolio</p></a>
       <i className="bi bi-list text-white text-4xl" onClick={MobileNavOpen}></i>
       <div className={`w-screen h-screen  absolute top-0 left-0 ${mobileNav ? 'translate-x-0' : 'translate-x-full'}  flex duration-500 transition ease-in-out`}>
         <div className={`w-full bg-lime-500/30 ${closeNav ? "opacity-100" : "opacity-0"}`} onClick={MobileNavClose}></div>
